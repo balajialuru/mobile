@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Mobile multifield"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.list.v2.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_list_v2">
+    <content
+        granite:class="cmp-list__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <mobilelist
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Mobile List"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        fieldLabel="Mobile List"
+                        margin="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <mobilelist
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                                composite="true"
+                                                errorMessage="Only 4 slides are allowed"
+                                                fieldLabel="Mobile List"
+                                                maxlength="4">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                                    acs-commons-nested=""
+                                                    name="./mobileList">
+                                                    <layout
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                                        method="absolute"/>
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <title
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                    fieldDescription="Keep your title under 20 characters"
+                                                                    fieldLabel="Mobile Title"
+                                                                    name="./mobileTitle"
+                                                                    required="{Boolean}true"/>
+                                                                <shortdescription
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                                                    fieldDescription="Keep your short description under 40 characters"
+                                                                    fieldLabel="Mobile Description"
+                                                                    name="./mobileDescription"/>
+                                                                <ctalabel
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                    fieldDescription="Keep your CTA label under 13 characters"
+                                                                    fieldLabel="CTA label"
+                                                                    name="./ctaLabel"/>
+                                                                <ctalink
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                                    fieldLabel="CTA link"
+                                                                    name="./ctaLink"
+                                                                    rootPath="/content/"/>
+                                                                <image
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="commerce/gui/components/common/assetpicker"
+                                                                    fieldLabel="Image"
+                                                                    name="./mobileImage"
+                                                                    required="{Boolean}true"
+                                                                    rootPath="/content/dam"/>
+                                                                <imagealttext
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                    fieldDescription="The author should be able to over-ride the alt-text value provided by DAM, but overwritten text should NOT be updated on the DAM.&#xa;"
+                                                                    fieldLabel="Image Alt Text"
+                                                                    name="./imageAltText"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </mobilelist>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </mobilelist>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

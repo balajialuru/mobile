@@ -1,0 +1,50 @@
+<sly data-sly-use.heroList="com.adobe.aem.rmit.core.models.RMITHomePageHeroModel">
+    <div data-sly-test="${wcmmode.edit && !heroList.rmitHomePageList }" data-sly-unwrap>
+        Edit RMIT-Homepage-Hero component
+    </div>
+    <div class="hero-home__wrapper hero-fullwidth full-width">
+        <div class="hero-home__desk lazy slider">
+            <sly data-sly-list.listItems="${heroList.rmitHomePageList}">
+                <div class="hero-home-desk-slider">
+                    <div class="text-wrapper">
+                        <sly data-sly-use.link="${'com.adobe.aem.rmit.core.MapUrlHelper' @ url =listItems.ctaLink}" data-sly-unwrap>
+                                <div class="text-center">
+                                    <div class="texts">
+                                        <sly data-sly-test="${listItems.ctaLabel && listItems.ctaLink}">
+                                            <div class="with-btn">
+                                                <div class="desc">
+                                                    <a href="${link.mappedUrl}" class="hero-home-desk-headinglink" data-analytics-type="homepagebanner" data-analytics-value="${listItems.title}" >  <div class="hero-header font_museo500">${listItems.title}</div></a>
+                                                    <p class="btn-rg">${listItems.shortDescription}</p>
+                                                </div>
+                                                <div class="btn-wrapper">
+                                                    <sly data-sly-use.link="${'com.adobe.aem.rmit.core.MapUrlHelper' @ url =listItems.ctaLink}" data-sly-unwrap>
+                                                        <a class="btn btn-cta btn-desk-view font_museo500" href="${link.mappedUrl}" data-analytics-type="homepagebanner" data-analytics-value="${listItems.ctaLabel}">${listItems.ctaLabel}</a>
+                                                    </sly>
+                                                </div>
+                                            </div>
+                                        </sly>
+                                        <sly data-sly-test="${(!listItems.ctaLabel && !listItems.ctaLink)||(!listItems.ctaLabel && listItems.ctaLink)||(listItems.ctaLabel && !listItems.ctaLink)}">
+                                          <div class="without-btn"> 
+                                            <div class="desc">
+                                                <div class="hero-header font_museo500">${listItems.title}</div>
+                                                <p class="btn-rg">${listItems.shortDescription}</p>
+                                            </div>
+                                           </div>
+                                        </sly>
+                                    </div>
+                                </div>
+                                <sly data-sly-test="${listItems.imageAltText}">
+                                    <img src="${listItems.image}" alt="${listItems.imageAltText}" height="450" />
+                                </sly>
+                                <sly data-sly-test="${!listItems.imageAltText}">
+                                    <sly data-sly-use.imageAltTextModel="${'com.adobe.aem.rmit.core.models.ImageAltTextModel' @ imagePath=listItems.image}">
+                                        <img src="${listItems.image}" alt="${imageAltTextModel.altText}" height="450" />
+                                    </sly>
+                                </sly>
+                        </sly>
+                    </div>
+                </div>
+            </sly>
+        </div>
+    </div>
+</sly>

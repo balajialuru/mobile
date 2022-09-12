@@ -1,0 +1,55 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+        Edit Mobile details component
+</div>
+<sly data-sly-use.mobilemulti="com.adobe.mobile.core.models.MobileDetails">
+	<div class="moblile-content1">
+		<div class="mobiletitle1">${mobilemulti.mobileTitle}</div>
+
+		<div data-sly-list.details="${mobilemulti.mobileDetailswithmap}">
+                <div class="mobilename1">${details.mobileName}</div>
+                <div class="mobileDescription1">${details.mobileDescription}</div>
+
+                <div class="mobileImage1" data-sly-test="${details.mobileAltText}">
+                    <img src="${details.mobileImage}" alt="${details.mobileAltText}" height="200" width="150"/>
+                </div>
+                <div class="mobilepublishdate1">${details.publishYear}</div>
+			<br></br><br></br>
+ 		</div>
+	</div>
+ </sly>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--/* <h1>Author Bio</h1>
+<div data-sly-use.author="${'com.aem.geeks.core.models.Author' @ rAttribute='my Attribute'}"></div>
+
+    <div>First Name :  ${author.firstName} </div>
+    <div>Lasr Name :  ${author.lastName}   </div>
+    <div>Is Professor:  ${author.isProfessor}  </div>
+    <div>Page Title :  ${author.pageTitle}  </div>
+    <div>Request Attribute :  ${author.requestAttribute}  </div>
+    <div>Home Page Name :  ${author.homePageName}  </div>
+    <div>Modified By :  ${author.lastModifiedBy}  </div>
+
+    <div>Books : ${author.books @ join=', '}</div>
+
+        ========================== USING MAP ================================
+    <div data-sly-list.balu="${author.bookDetailsWithMap}">
+        ---------------Book : ${itemList.count}--------------
+        <p> Book : <b>${balu.bookname} </b></p>
+        <p> Subject : <b>${balu.booksubject}</b> </p>
+        <p> Publish : <b>${balu.publishyear}</b> </p>
+    </div> */-->
+
+    Hiii

@@ -1,0 +1,14 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+        Edit Mobile banner component
+</div>
+<sly data-sly-use.mobilebanner="com.adobe.mobile.core.models.MobileBanner">
+	<div class="moblile-content">
+    	<div class="mobiletitle">${mobilebanner.mobileTitle}</div>
+
+    	<div class="mobileDescription">${mobilebanner.mobileDescription}</div>
+
+		<div class="mobileImage" data-sly-test="${mobilebanner.mobileAltText}">
+     		<img src="${mobilebanner.mobileImage}" alt="${mobilebanner.mobileAltText}" height="450" />
+     	</div>
+ 	</div>
+ </sly>

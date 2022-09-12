@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-09-11T11:38:31.983+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/Mobile/settings/wcm/templates/iphone-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="IPhone 12 Mini Page"
+        sling:resourceType="Mobile/components/structure/page">
+        <root
+            jcr:lastModified="{Date}2022-09-07T20:40:20.519+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid_2093306882
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <author
+                    jcr:created="{Date}2022-09-10T17:33:41.981+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-09-10T18:35:24.336+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemgeeks/components/content/author"
+                    books="[AEM,JAVA,HTML]"
+                    professor="false">
+                    <bookdetailswithmap jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            bookname="AEM"
+                            booksubject="Sub"
+                            publishyear="2020"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            bookname="JAVA"
+                            booksubject="Sub2"
+                            publishyear="2021"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            bookname="HTML"
+                            booksubject="Sub3"
+                            publishyear="2022"/>
+                    </bookdetailswithmap>
+                </author>
+                <author_100305721
+                    jcr:created="{Date}2022-09-10T17:40:26.403+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-09-10T17:41:11.093+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemgeeks/components/content/author"
+                    books="[AEM,HTML,JAVA]"
+                    fname="BALAJI"
+                    lname="ALURU"
+                    professor="true">
+                    <bookdetailswithmap jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            bookname="AEM"
+                            booksubject="SUB"
+                            publishyear="2022"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            bookname="JAVA"
+                            booksubject="sub"
+                            publishyear="2021"/>
+                    </bookdetailswithmap>
+                </author_100305721>
+                <mobilemultifield_old
+                    jcr:created="{Date}2022-09-11T10:08:27.959+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-09-11T10:08:27.959+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="Mobile/components/content/mobilemultifield-old"/>
+                <mobilemultifield_old_1295090858
+                    jcr:created="{Date}2022-09-11T10:08:57.323+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-09-11T10:08:57.323+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="Mobile/components/content/mobilemultifield-old"/>
+                <mobilemultifield_1498969653
+                    jcr:created="{Date}2022-09-11T10:11:45.868+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-09-11T11:38:31.977+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="Mobile/components/content/mobilemultifield"
+                    mobileTitle="IPHONE DETAILS">
+                    <mobiledetailswithmap jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            mobileAltText="Iphone12"
+                            mobileDescription="Mobile Description"
+                            mobileImage="/content/dam/Mobile/iPhone12.jpg"
+                            mobileName="Iphone 12"
+                            publishYear="{Date}2022-08-17T00:00:00.000+05:30"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            mobileAltText="alt"
+                            mobileDescription="Mobile Description2"
+                            mobileImage="/content/dam/Mobile/iphone12mini.jpg"
+                            mobileName="Iphone12 mini"
+                            publishYear="{Date}2022-09-20T00:00:00.000+05:30"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            mobileAltText="Alt"
+                            mobileDescription="Mobile Description3"
+                            mobileImage="/content/dam/Mobile/iPhone12.jpg"
+                            mobileName="Iphone 13"
+                            publishYear="{Date}2022-09-13T00:00:00.000+05:30"/>
+                    </mobiledetailswithmap>
+                </mobilemultifield_1498969653>
+            </responsivegrid_2093306882>
+        </root>
+    </jcr:content>
+</jcr:root>
