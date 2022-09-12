@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:lastModified="{Date}2022-09-07T20:55:26.395+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/Mobile/settings/wcm/templates/iphone-template"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="Mobile/components/structure/page">
+        <root
+            jcr:lastModified="{Date}2022-09-07T20:40:20.519+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2022-09-07T20:42:04.454+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-09-07T20:42:04.454+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <text
+                    jcr:created="{Date}2022-09-07T20:47:43.902+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-09-07T20:47:54.560+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="Mobile/components/content/text"
+                    text="&lt;p>This is Header&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
+                <languagenavigation
+                    jcr:created="{Date}2022-09-07T20:43:35.194+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-09-07T20:44:45.039+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="Mobile/components/content/languagenavigation"
+                    navigationRoot="/content/Mobile/Language-Masters/en"
+                    structureDepth="2"/>
+                <search
+                    jcr:created="{Date}2022-09-07T20:43:43.808+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-09-07T20:43:43.808+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="Mobile/components/content/search"/>
+                <sharing
+                    jcr:created="{Date}2022-09-07T20:43:50.678+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-09-07T20:45:06.894+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="Mobile/components/content/sharing"
+                    id="fa fa-facebook"/>
+            </responsivegrid>
+            <responsivegrid_2093306882
+                jcr:created="{Date}2022-09-07T20:42:16.344+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-09-07T20:42:16.344+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                editable="{Boolean}true">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="11"/>
+                </cq:responsive>
+            </responsivegrid_2093306882>
+            <text
+                jcr:created="{Date}2022-09-07T20:46:56.784+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-09-07T20:47:37.009+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="Mobile/components/content/text"
+                text="&lt;p>This is footer&lt;/p>&#xd;&#xa;"
+                textIsRich="true"/>
+            <search
+                jcr:created="{Date}2022-09-07T20:46:37.518+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-09-07T20:46:37.518+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/search"/>
+            <navigation
+                jcr:created="{Date}2022-09-07T20:46:49.955+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-09-07T20:47:27.967+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="Mobile/components/content/navigation"
+                collectAllPages="true"
+                disableShadowing="false"
+                navigationRoot="/content/Mobile/Language-Masters/en"
+                structureStart="2"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}650"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

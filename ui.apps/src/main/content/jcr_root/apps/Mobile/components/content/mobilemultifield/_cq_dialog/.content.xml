@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Mobile Details"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[aemgeeks.components.author.editor]">
+    <content
+        granite:class="cmp-author_editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <mobiletitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Mobile Title"
+                        name="./mobileTitle"
+                        validation="geeks-firstname-validation"/>
+                    <well-multifield
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well"
+                        fieldLabel="mobile List">
+                        <items jcr:primaryType="nt:unstructured">
+                            <mobilemultifieldwithmap
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldDescription="Mobile Details"
+                                fieldLabel="Mobile Details"
+                                required="{Boolean}false">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    emptyText="Books Details"
+                                    name="./mobiledetailswithmap">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <mobilename
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            emptyText="Mobile Name"
+                                            fieldLabel="Mobile Name"
+                                            name="./mobileName"/>
+                                        <published
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                            emptyText="Publish Year"
+                                            fieldLabel="Publish Year"
+                                            name="./publishYear"/>
+                                        <mobiledescription
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Mobile Description"
+                                            name="./mobileDescription"
+                                            required="{Boolean}false"/>
+                                        <mobileImage
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="commerce/gui/components/common/assetpicker"
+                                            fieldLabel="Mobile Image"
+                                            name="./mobileImage"
+                                            required="{Boolean}true"
+                                            rootPath="/content/dam/Mobile"/>
+                                        <mobileAltText
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                            fieldDescription="Keep your title under 20 characters"
+                                            fieldLabel="Mobile Alternate Text"
+                                            name="./mobileAltText"/>
+                                    </items>
+                                </field>
+                            </mobilemultifieldwithmap>
+                        </items>
+                    </well-multifield>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>
